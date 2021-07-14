@@ -1,0 +1,34 @@
+{
+  "name": "django_btl_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch --entry ./btl_blogs/frontend/src/index.js --output-path ./btl_blogs/frontend/static/frontend/",
+    "build": "webpack --mode production --entry ./btl_blogs/frontend/src/index.js --output-path ./btl_blogs/frontend/static/frontend/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antwaunjohnson/django_btl_blog.git"
+  },
+  "keywords": [],
+  "author": "Antwaun Johnson <antwaun.l.johnson@gmail.com> (http://antwaunjohnson.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antwaunjohnson/django_btl_blog/issues"
+  },
+  "homepage": "https://github.com/antwaunjohnson/django_btl_blog#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-dom": "^17.0.2"
+  }
+}
