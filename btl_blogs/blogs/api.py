@@ -6,9 +6,9 @@ from .serializers import BlogSerializer
 
 
 class BlogViewSet(viewsets.ModelViewSet):
-    queryset = Blog.objects.all()
+    # queryset = Blog.objects.all()
     permission_classes = [
-        permissions.AllowAny
+        permissions.IsAuthenticated
     ]
 
     serializer_class = BlogSerializer
