@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'knox',
     'blogs',
     'frontend',
+    'accounts',
 ]
 
 REST_FRAMEWORK = {
