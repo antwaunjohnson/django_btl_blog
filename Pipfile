@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 django-rest-knox = "*"
 python-decouple = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
