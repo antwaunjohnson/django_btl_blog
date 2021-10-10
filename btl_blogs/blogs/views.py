@@ -1,7 +1,7 @@
-from rest_framework.serializers import Serializer
-from rest_framework.views import APIView
+from django.http.response import Http404
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
+from django.http import Http404
 
 
 from .serializers import BlogSerializer
@@ -18,8 +18,8 @@ def get_blogs(request):
 
 
 @api_view(['GET'])
-def get_blog(request, pk):
-    blogs = Blog.objects.get(id=pk)
+def get_blog(request, slug=None):
+    blogs = Blog.objects.get(slug=slug)
     serializer = BlogSerializer(blogs, many=False)
     return Response(serializer.data)
 
