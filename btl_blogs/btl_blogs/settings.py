@@ -16,7 +16,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 if not DEBUG:
-    ALLOWED_HOSTS += [config('DJANGO_ALLOWED_Host')]
+    ALLOWED_HOSTS += [config('DJANGO_ALLOWED_HOST')]
 
 
 # Application definition
