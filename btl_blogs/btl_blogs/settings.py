@@ -15,8 +15,8 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-# if not DEBUG:
-#     ALLOWED_HOSTS += [config('DJANGO_ALLOWED_HOST')]
+if not DEBUG:
+    ALLOWED_HOSTS += [config('DJANGO_ALLOWED_HOST')]
 
 
 # Application definition
