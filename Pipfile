@@ -10,8 +10,8 @@ django-rest-knox = "*"
 python-decouple = "*"
 psycopg2 = "*"
 django-cors-headers = "*"
-gunicorn = "*"
 whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 
